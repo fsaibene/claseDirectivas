@@ -39,5 +39,15 @@ angular
 			restrict : "E",
 			templateUrl : "templates/templateBandera.html"		
 		}
-	})//Dir utnTituloParametro
+	})//Dir utnBandera
+	.directive('utnBanderaObj',function(){
+		return {
+			scope : {
+				miBandera : '=banderaporparametro'
+			},
+			replace : true,
+			restrict : "E",
+			templateUrl : "templates/templateBandera.html"		
+		}
+	})//Dir utnBanderaObj
 ;//Modulo

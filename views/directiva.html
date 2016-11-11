@@ -6,4 +6,11 @@
 	<div class="utn-saludo-dos"></div> -->
 	<!-- directive: utn-saludo-dos -->
 	<utn-bandera nombrepais="Arg" fotobandera="https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"></utn-bandera>
+
+	<!-- <div ng-repeat="bandera in listadoBanderas">
+		<img ng-src="{{bandera.BanderaChica}}" height="30" width="42"><strong>{{bandera.Nombre}}</strong><br>
+	</div> -->
+	<div ng-repeat="bandera in listadoBanderas">	
+		<utn-bandera-obj banderaporparametro="bandera" ></utn-bandera-obj>
+	</div>
 </div>
